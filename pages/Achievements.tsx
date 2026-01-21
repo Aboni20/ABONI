@@ -181,7 +181,7 @@ const Achievements: React.FC = () => {
   const showHome = homeItems.length > 0;
 
   // Reusable Card Component
-  const AchievementCard = ({ item }: { item: Achievement }) => {
+  const AchievementCard: React.FC<{ item: Achievement }> = ({ item }) => {
     const isExpanded = !!expandedIds[item.id];
     const isViewingImage = viewingImage?.achievementId === item.id;
 
