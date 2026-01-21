@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, FileText } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 const CV: React.FC = () => {
   return (
@@ -26,9 +26,24 @@ const CV: React.FC = () => {
         <div className="max-w-3xl mx-auto space-y-10 text-gray-800">
           
           {/* Header */}
-          <div className="border-b border-gray-200 pb-8 text-center md:text-left">
-            <h2 className="text-3xl font-serif font-bold text-gray-900">Irfat Nur Aboni</h2>
-            <p className="text-gray-600 mt-2">irfat.aboni@student.university.edu | +123 456 7890 | linkedin.com/in/irfatnuraboni</p>
+          <div className="border-b border-gray-200 pb-8 flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+            <div className="text-center md:text-left order-2 md:order-1">
+              <h2 className="text-3xl font-serif font-bold text-gray-900">Irfat Nur Aboni</h2>
+              <p className="text-gray-600 mt-2">irfat.aboni@student.university.edu | +123 456 7890 | linkedin.com/in/irfatnuraboni</p>
+            </div>
+            <div className="order-1 md:order-2 mx-auto md:mx-0">
+               <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-100">
+                  <img 
+                    src="/images/profile/profile.jpg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover" 
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none'; // Hide if not found in CV view
+                    }}
+                  />
+               </div>
+            </div>
           </div>
 
           {/* Education */}

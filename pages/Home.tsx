@@ -8,7 +8,8 @@ const Home: React.FC = () => {
       
       {/* Introduction Section */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start animate-fade-in-up">
-        <div className="lg:col-span-8 space-y-8">
+        {/* Left Content */}
+        <div className="lg:col-span-7 space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-stone-100 text-stone-600 text-xs font-semibold tracking-wider uppercase rounded-full border border-stone-200">
              <Layers size={12} /> Academic Portfolio
           </div>
@@ -43,25 +44,45 @@ const Home: React.FC = () => {
           </div>
         </div>
         
-        {/* Research & Focus Sidebar */}
-        <div className="lg:col-span-4 bg-stone-50 p-8 rounded-xl border border-stone-200 shadow-sm h-full">
-           <h3 className="font-serif font-semibold text-lg text-primary mb-6 pb-3 border-b border-stone-200">
-             Research & Focus
-           </h3>
-           <ul className="space-y-5 text-sm text-stone-700">
-             <li className="flex gap-4 items-start group">
-               <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-               <span className="leading-relaxed">Digital and information systems in organizational contexts.</span>
-             </li>
-             <li className="flex gap-4 items-start group">
-               <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-               <span className="leading-relaxed">Technology-supported sustainability initiatives.</span>
-             </li>
-             <li className="flex gap-4 items-start group">
-               <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
-               <span className="leading-relaxed">Intersections of technology, strategy, and social impact.</span>
-             </li>
-           </ul>
+        {/* Right Sidebar: Profile Image & Research Focus */}
+        <div className="lg:col-span-5 space-y-8">
+           {/* Profile Image Card */}
+           <div className="relative group w-full max-w-sm mx-auto lg:ml-auto">
+              <div className="absolute inset-0 bg-primary/5 transform translate-x-3 translate-y-3 rounded-xl transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+              <div className="relative rounded-xl overflow-hidden border border-gray-100 shadow-lg aspect-[3/4] lg:aspect-[4/5] bg-gray-100">
+                <img 
+                  src="/images/profile/profile.jpg" 
+                  alt="Irfat Nur Aboni" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onError={(e) => {
+                    // Fallback if image isn't loaded yet
+                    const target = e.target as HTMLImageElement;
+                    target.src = "https://placehold.co/600x800/e2e8f0/475569?text=Profile+Image";
+                  }}
+                />
+              </div>
+           </div>
+
+           {/* Research Focus Box */}
+           <div className="bg-stone-50 p-6 rounded-xl border border-stone-200 shadow-sm">
+             <h3 className="font-serif font-semibold text-lg text-primary mb-4 pb-2 border-b border-stone-200">
+               Research & Focus
+             </h3>
+             <ul className="space-y-4 text-sm text-stone-700">
+               <li className="flex gap-3 items-start group">
+                 <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
+                 <span className="leading-relaxed">Digital and information systems in organizational contexts.</span>
+               </li>
+               <li className="flex gap-3 items-start group">
+                 <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
+                 <span className="leading-relaxed">Technology-supported sustainability initiatives.</span>
+               </li>
+               <li className="flex gap-3 items-start group">
+                 <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
+                 <span className="leading-relaxed">Intersections of technology, strategy, and social impact.</span>
+               </li>
+             </ul>
+          </div>
         </div>
       </section>
 
