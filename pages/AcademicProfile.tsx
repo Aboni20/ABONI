@@ -61,6 +61,7 @@ Alongside my academic coursework, I am working on applied projects such as AI-su
     title: 'Erasmus+ International Credit Mobility (ICM) — Exchange Semester',
     institution: 'Mälardalens University, Sweden',
     duration: 'January 2024 – June 2024',
+    gradeInfo: 'Completed 30 ECTS',
     summary: 'During my Erasmus+ exchange semester at Mälardalens University, I studied at the School of Innovation, Design and Engineering (IDT). This experience allowed me to learn in an international academic environment and work closely with students from different countries.',
     details: `As part of my coursework, we worked on practical case-based projects. One of these focused on how a jute-based business could be developed by sourcing raw materials from Bangladesh and operating in a European market like Sweden. This project helped me understand internationalization, supply chains, and how sustainable local resources can be connected to global business models.
 

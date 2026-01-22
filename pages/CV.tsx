@@ -34,7 +34,7 @@ const CV: React.FC = () => {
             <div className="order-1 md:order-2 mx-auto md:mx-0">
                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-100">
                   <img 
-                    src="/images/profile/profile.jpg" 
+                    src="/images/profile/profile.jpg?v=2" 
                     alt="Profile" 
                     className="w-full h-full object-cover" 
                     onError={(e) => {

@@ -43,12 +43,13 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative overflow-hidden w-10 h-10 rounded-full bg-gray-200 border border-gray-300 shadow-inner flex-shrink-0">
                <img 
-                 src="/images/profile/profile.jpg" 
+                 src="/images/profile/profile.jpg?v=2" 
                  alt="Profile" 
                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" 
                  onError={(e) => {
                    const target = e.target as HTMLImageElement;
                    if (!target.src.includes('picsum')) {
+                      // Only fallback if the main image fails
                       target.src = "https://picsum.photos/200/200";
                    }
                  }}
