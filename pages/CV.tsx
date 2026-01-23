@@ -359,7 +359,7 @@ const CV: React.FC = () => {
                     </div>
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
                         <h3 className="font-bold text-gray-900">Mir Rasel Ahmed</h3>
-                        <p className="text-sm text-gray-600 mb-2">Position: Digital Specialist, AstraZeneca; Ex-Associate at Garena Free Fire</p>
+                        <p className="text-sm text-gray-600 mb-2">Position & Organization: Digital Specialist, AstraZeneca; Ex-Associate at Garena Free Fire</p>
                         <p className="text-sm text-gray-600 mt-2">Email: <a href="mailto:mirraselbd@gmail.com" className="text-primary hover:underline">mirraselbd@gmail.com</a></p>
                     
                     </div>
