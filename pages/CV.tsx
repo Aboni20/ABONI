@@ -4,20 +4,28 @@ import { Download } from 'lucide-react';
 const CV: React.FC = () => {
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      {/* Action Bar */}
-      <div className="max-w-5xl mx-auto mb-8 flex justify-end">
-        <a 
-          href="/placeholder-cv.pdf" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg shadow hover:bg-slate-700 transition-colors"
-        >
-          <Download size={16} /> Download PDF
-        </a>
+      
+      {/* New Hero Banner Section */}
+      <div className="max-w-5xl mx-auto mb-10">
+        <div className="bg-primary rounded-2xl p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-6 shadow-md text-white">
+          <div className="text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl font-serif font-bold mb-2 tracking-tight">Curriculum Vitae</h1>
+            <p className="text-white/70 text-sm font-medium uppercase tracking-wider">Last updated: February 2026</p>
+          </div>
+          <a 
+            href="/placeholder-cv.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-primary px-8 py-3.5 rounded-lg font-bold shadow-sm hover:bg-gray-50 hover:scale-105 transition-all flex items-center gap-2.5"
+          >
+            <Download size={18} />
+            Download PDF
+          </a>
+        </div>
       </div>
 
       {/* CV Document Container */}
-      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden text-gray-800">
+      <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden text-gray-800 border border-gray-100">
         
         {/* Header Section */}
         <div className="p-8 md:p-12 border-b border-gray-100 flex flex-col md:flex-row gap-8 items-start justify-between bg-white">
@@ -349,7 +357,7 @@ const CV: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
                         <h3 className="font-bold text-gray-900">Dr Nusrat Jahan</h3>
-                        <p className="text-sm text-gray-600 mb-2">Position: Associate Professor and Head, Department of ITM.</p>
+                        <p className="text-sm text-gray-600 mb-2">Position: Assistant Professor and Head, Department of ITM.</p>
                         <p className="text-sm text-gray-600">Organization: Daffodil International University</p>
                         <p className="text-sm text-gray-600 mt-2">Email: <a href="mailto:headitm@daffodilvarsity.edu.bd" className="text-primary hover:underline">headitm@daffodilvarsity.edu.bd</a></p>
                         <p className="text-sm text-gray-600">Phone: +880 168174350</p>
