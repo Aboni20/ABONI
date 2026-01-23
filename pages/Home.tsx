@@ -57,9 +57,8 @@ const Home: React.FC = () => {
                   onError={(e) => {
                     // Fallback if image isn't loaded yet
                     const target = e.target as HTMLImageElement;
-                    if (!target.src.includes('placehold.co')) {
-                      target.src = "https://placehold.co/600x800/e2e8f0/475569?text=Profile+Image";
-                    }
+                    target.onerror = null; // Prevent infinite loop
+                    target.src = "https://placehold.co/600x800/e2e8f0/475569?text=Profile+Image";
                   }}
                 />
               </div>

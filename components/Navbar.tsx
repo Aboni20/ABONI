@@ -48,10 +48,8 @@ const Navbar: React.FC = () => {
                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" 
                  onError={(e) => {
                    const target = e.target as HTMLImageElement;
-                   if (!target.src.includes('picsum')) {
-                      // Only fallback if the main image fails
-                      target.src = "https://picsum.photos/200/200";
-                   }
+                   target.onerror = null; // IMPORTANT: Prevents infinite loop
+                   target.src = "https://placehold.co/200x200/e2e8f0/475569?text=IN";
                  }}
                />
             </div>
