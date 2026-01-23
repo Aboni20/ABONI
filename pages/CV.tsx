@@ -9,7 +9,7 @@ const CV: React.FC = () => {
         <div>
           <h1 className="text-2xl md:text-3xl font-serif font-bold mb-2">Curriculum Vitae</h1>
           <p className="text-gray-300">
-            Last updated: October 2024
+            Last updated: February 2026
           </p>
         </div>
         <a 
