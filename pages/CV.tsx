@@ -58,11 +58,11 @@ const CV: React.FC = () => {
             
             {/* ABOUT MYSELF */}
             <section>
-                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     About Myself
                 </h2>
-                <div className="text-gray-700 leading-relaxed text-justify space-y-4 border-l-2 border-gray-100 pl-6">
+                <div className="text-gray-700 leading-relaxed text-justify space-y-4">
                     <p>
                         I am a bachelor’s student in Information Technology and Management, with an academic background that combines applied information technology with management and project-based coursework. My studies focus on understanding how technology is used in business, organisational, and academic contexts.
                     </p>
@@ -77,15 +77,14 @@ const CV: React.FC = () => {
 
             {/* EDUCATION & TRAINING */}
             <section>
-                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     Education & Training
                 </h2>
                 
-                <div className="space-y-8 pl-2">
+                <div className="space-y-8">
                     {/* Item 1 */}
-                    <div className="relative border-l-2 border-gray-200 pl-8 pb-2">
-                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200 border-2 border-white"></div>
+                    <div>
                         <div className="text-sm text-gray-500 font-medium mb-1">01/07/2022 - Current | DHAKA, BANGLADESH</div>
                         <h3 className="text-lg font-bold text-gray-900">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY AND MANAGEMENT</h3>
                         <div className="text-primary font-serif font-semibold mb-3">DAFFODIL INTERNATIONAL UNIVERSITY, BANGLADESH</div>
@@ -102,8 +101,7 @@ const CV: React.FC = () => {
                     </div>
 
                     {/* Item 2 */}
-                    <div className="relative border-l-2 border-gray-200 pl-8 pb-2">
-                         <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200 border-2 border-white"></div>
+                    <div>
                         <div className="text-sm text-gray-500 font-medium mb-1">10/01/2024 - 07/06/2024 | VÄSTERÅS, SWEDEN</div>
                         <h3 className="text-lg font-bold text-gray-900">ERASMUS+ INTERNATIONAL CREDIT MOBILITY (ICM) – EXCHANGE SEMESTER</h3>
                         <div className="text-primary font-serif font-semibold mb-3">MÄLARDALEN UNIVERSITY, SWEDEN</div>
@@ -117,15 +115,14 @@ const CV: React.FC = () => {
 
              {/* WORK EXPERIENCE */}
              <section>
-                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     Work Experience
                 </h2>
                 
-                <div className="space-y-8 pl-2">
+                <div className="space-y-8">
                     {/* Item 1 */}
-                    <div className="relative border-l-2 border-gray-200 pl-8 pb-2">
-                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200 border-2 border-white"></div>
+                    <div>
                         <div className="text-sm text-gray-500 font-medium mb-1">10/01/2026 - CURRENT | DHAKA, BANGLADESH</div>
                         <h3 className="text-lg font-bold text-gray-900">ACADEMIC MENTOR</h3>
                         <div className="text-primary font-serif font-semibold mb-3">DEPARTMENT OF ITM, DAFFODIL INTERNATIONAL UNIVERSITY, BANGLADESH</div>
@@ -139,8 +136,7 @@ const CV: React.FC = () => {
                     </div>
 
                     {/* Item 2 */}
-                    <div className="relative border-l-2 border-gray-200 pl-8 pb-2">
-                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200 border-2 border-white"></div>
+                    <div>
                         <div className="text-sm text-gray-500 font-medium mb-1">20/11/2022 - 31/03/2023 | DHAKA, BANGLADESH</div>
                         <h3 className="text-lg font-bold text-gray-900">AFFILIATE MARKETING COORDINATOR</h3>
                         <div className="text-primary font-serif font-semibold mb-3">10 MINUTE SCHOOL</div>
@@ -156,8 +152,7 @@ const CV: React.FC = () => {
                     </div>
 
                     {/* Item 3 */}
-                    <div className="relative border-l-2 border-gray-200 pl-8 pb-2">
-                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200 border-2 border-white"></div>
+                    <div>
                         <div className="text-sm text-gray-500 font-medium mb-1">20/11/2021 - 20/11/2023 | DHAKA, BANGLADESH</div>
                         <h3 className="text-lg font-bold text-gray-900">ONLINE CONTENT AND COMMUNITY MANAGER</h3>
                         <div className="text-primary font-serif font-semibold mb-3">GARENA FREE FIRE BANGLADESH</div>
@@ -176,8 +171,8 @@ const CV: React.FC = () => {
 
              {/* HONOURS AND AWARDS */}
              <section>
-                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     Honours and Awards
                 </h2>
                 <div className="space-y-6">
@@ -260,8 +255,8 @@ const CV: React.FC = () => {
 
              {/* LANGUAGE SKILLS */}
              <section>
-                 <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                 <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     Language Skills
                 </h2>
                 <div className="mb-4">
@@ -310,8 +305,8 @@ const CV: React.FC = () => {
 
              {/* VOLUNTEERING */}
              <section>
-                <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     Volunteering
                 </h2>
                 <div className="space-y-6">
@@ -350,8 +345,8 @@ const CV: React.FC = () => {
 
              {/* REFERENCES */}
              <section>
-                 <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                 <h2 className="text-lg font-extrabold text-blue-900 uppercase tracking-wider mb-6 flex items-center gap-3">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-900"></span>
                     References
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8">
