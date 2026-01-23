@@ -352,7 +352,7 @@ const CV: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
                         <h3 className="font-bold text-gray-900">Dr Nusrat Jahan</h3>
-                        <p className="text-sm text-gray-600 mb-2">Position: Assistant Professor and Head, Department of ITM.</p>
+                        <p className="text-sm text-gray-600 mb-2">Position: Associate Professor and Head, Department of ITM.</p>
                         <p className="text-sm text-gray-600">Organization: Daffodil International University</p>
                         <p className="text-sm text-gray-600 mt-2">Email: <a href="mailto:headitm@daffodilvarsity.edu.bd" className="text-primary hover:underline">headitm@daffodilvarsity.edu.bd</a></p>
                         <p className="text-sm text-gray-600">Phone: +880 168174350</p>
@@ -361,7 +361,7 @@ const CV: React.FC = () => {
                         <h3 className="font-bold text-gray-900">Mir Rasel Ahmed</h3>
                         <p className="text-sm text-gray-600 mb-2">Position: Digital Specialist, AstraZeneca; Ex-Associate at Garena Free Fire</p>
                         <p className="text-sm text-gray-600 mt-2">Email: <a href="mailto:mirraselbd@gmail.com" className="text-primary hover:underline">mirraselbd@gmail.com</a></p>
-                        <p className="text-sm text-gray-600">Phone: +971 582869201</p>
+                    
                     </div>
                 </div>
              </section>
