@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         {/* Right Sidebar: Profile Image & Research Focus */}
         <div className="lg:col-span-5 space-y-8">
            {/* Profile Image Card */}
-           <div className="relative group w-full max-w-sm mx-auto lg:ml-auto">
+           <div className="relative group w-full max-w-xs mx-auto lg:ml-auto">
               <div className="absolute inset-0 bg-primary/5 transform translate-x-3 translate-y-3 rounded-xl transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
               <div className="relative rounded-xl overflow-hidden border border-gray-100 shadow-lg aspect-[3/4] lg:aspect-[4/5] bg-gray-100">
                 <img 
