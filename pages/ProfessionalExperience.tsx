@@ -16,17 +16,24 @@ interface ExperienceItem {
 
 const professionalData: ExperienceItem[] = [
   {
-    id: 'garena',
-    role: 'Community Moderator (Voluntary)',
-    organization: 'Garena Free Fire – Bangladesh',
-    duration: 'November 2021 – November 2023',
-    summary: 'Worked with gaming communities to support engagement, moderation, and feedback collection for localized digital platforms.',
+    id: 'uta-diu',
+    role: 'Undergraduate Teaching Assistant',
+    organization: 'Daffodil International University',
+    duration: 'February 2026 – Present',
+    summary: 'Department of Information Technology and Management.',
+    details: []
+  },
+  {
+    id: '10ms',
+    role: 'Affiliate Marketing Coordinator',
+    organization: "10 Minute School (Bangladesh's First EdTech Startup)",
+    duration: 'November 2022 – March 2023',
+    summary: 'Supported affiliate marketing activities and social media campaigns for a leading EdTech platform in Bangladesh.',
     details: [
-      'Moderated online community platforms to maintain a positive and engaging environment for players.',
-      'Collected user feedback and shared insights with internal teams to improve campaigns and user experience.',
-      'Communicated with community members through social platforms to understand preferences and build trust.',
-      'Supported localization tasks including translation, copywriting, and content adaptation.',
-      'Acted as a bridge between the player community and internal teams.'
+      'Managed affiliate relationships and supported daily social media listings.',
+      'Coordinated multiple social media campaigns and ensured partner participation.',
+      'Attended meetings with platform owners to support growth targets.',
+      'Onboarded new platform administrators as affiliates.'
     ]
   },
   {
@@ -44,16 +51,17 @@ const professionalData: ExperienceItem[] = [
     ]
   },
   {
-    id: '10ms',
-    role: 'Affiliate Marketing Coordinator',
-    organization: '10 Minute School (EdTech Platform)',
-    duration: 'November 2022 – March 2023',
-    summary: 'Supported affiliate marketing activities and social media campaigns for a leading EdTech platform in Bangladesh.',
+    id: 'garena',
+    role: 'Community Moderator (Voluntary)',
+    organization: 'Garena Free Fire – Bangladesh',
+    duration: 'November 2021 – November 2023',
+    summary: 'Worked with gaming communities to support engagement, moderation, and feedback collection for localized digital platforms.',
     details: [
-      'Managed affiliate relationships and supported daily social media listings.',
-      'Coordinated multiple social media campaigns and ensured partner participation.',
-      'Attended meetings with platform owners to support growth targets.',
-      'Onboarded new platform administrators as affiliates.'
+      'Moderated online community platforms to maintain a positive and engaging environment for players.',
+      'Collected user feedback and shared insights with internal teams to improve campaigns and user experience.',
+      'Communicated with community members through social platforms to understand preferences and build trust.',
+      'Supported localization tasks including translation, copywriting, and content adaptation.',
+      'Acted as a bridge between the player community and internal teams.'
     ]
   }
 ];
@@ -63,7 +71,7 @@ const volunteerData: ExperienceItem[] = [
     id: 'itm-club',
     role: 'President',
     organization: 'ITM Club, Daffodil International University',
-    duration: 'December 2024 – Present',
+    duration: 'December 2024 – December 2025',
     summary: 'Leading departmental student organization activities and academic events.',
     details: [
       'Lead strategic planning and coordination of departmental initiatives.',
@@ -83,18 +91,6 @@ const volunteerData: ExperienceItem[] = [
       'Create structured social media and event-related content.',
       'Assist in event proposals, scheduling, and execution.',
       'Progressed through roles over an extended period, contributing to nationwide debate initiatives.'
-    ]
-  },
-  {
-    id: 'brighters',
-    role: 'Volunteer Advocate',
-    organization: 'Brighters Society Bangladesh',
-    duration: 'December 2023 – Present',
-    summary: 'Engaged in climate advocacy and sustainability-focused community initiatives.',
-    details: [
-      'Supported awareness campaigns on sustainability and climate action.',
-      'Participated in advocacy initiatives promoting environmentally responsible practices.',
-      'Contributed to youth engagement in climate-related discussions.'
     ]
   },
   {
@@ -152,16 +148,18 @@ const ExperienceCard: React.FC<{ item: ExperienceItem }> = ({ item }) => {
         </div>
 
         {/* Toggle Button */}
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="mt-4 flex items-center gap-1 text-sm font-bold text-primary hover:text-secondary transition-colors uppercase tracking-wide"
-        >
-          {expanded ? (
-            <>See less <ChevronUp size={14} /></>
-          ) : (
-            <>See more <ChevronDown size={14} /></>
-          )}
-        </button>
+        {item.details.length > 0 && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="mt-4 flex items-center gap-1 text-sm font-bold text-primary hover:text-secondary transition-colors uppercase tracking-wide"
+          >
+            {expanded ? (
+              <>See less <ChevronUp size={14} /></>
+            ) : (
+              <>See more <ChevronDown size={14} /></>
+            )}
+          </button>
+        )}
       </div>
     </div>
   );
