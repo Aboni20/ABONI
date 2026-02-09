@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
               <div className="relative overflow-hidden w-10 h-10 rounded-full bg-gray-200 border border-gray-300 shadow-inner flex-shrink-0">
                 <img 
-                  src="/images/profile/profile.jpg?v=2" 
+                  src="/images/header/header.jpg" 
                   alt="Profile" 
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" 
                   onError={(e) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Globe } from 'lucide-react';
+import { Mail, Linkedin, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -11,17 +11,17 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="flex space-x-6">
-          <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+          <a href="mailto:irfatnuraboni71@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
             <Mail size={20} />
             <span className="sr-only">Email</span>
           </a>
-          <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+          <a href="https://linkedin.com/in/irfatnuraboni" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
             <Linkedin size={20} />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-            <Globe size={20} />
-            <span className="sr-only">Academic Network</span>
+          <a href="https://www.instagram.com/aboni.in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+            <Instagram size={20} />
+            <span className="sr-only">Instagram</span>
           </a>
         </div>
       </div>

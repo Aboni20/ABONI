@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               <div className="absolute inset-0 bg-primary/5 transform translate-x-3 translate-y-3 rounded-xl transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
               <div className="relative rounded-xl overflow-hidden border border-gray-100 shadow-lg aspect-[3/4] lg:aspect-[4/5] bg-gray-100">
                 <img 
-                  src="/images/profile/profile.jpg?v=2" 
+                  src="/images/profile/profile.jpg" 
                   alt="Irfat Nur Aboni" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
